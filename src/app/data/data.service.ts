@@ -64,11 +64,11 @@ export class DataService {
     return this.categories;
   }
 
-  addPost(data) {
+  addPost(data: any) {
     this.ELEMENT_DATA.push(data);
   }
 
-  deletePost(index) {
+  deletePost(index: any) {
     this.ELEMENT_DATA = [
       ...this.ELEMENT_DATA.slice(0, index),
       ...this.ELEMENT_DATA.slice(index + 1),

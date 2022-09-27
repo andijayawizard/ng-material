@@ -8,6 +8,7 @@ import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DataService } from './data/data.service';
 
 @NgModule({
   declarations: [AppComponent, WelcomeComponent, DashboardComponent],
@@ -19,7 +20,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     FlexLayoutModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
